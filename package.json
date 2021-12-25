@@ -1,0 +1,59 @@
+{
+  "name": "citizentrader-web",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "build": "webpack --mode production",
+    "build:dev": "NODE_ENVIRONMENT=dev webpack --mode production",
+    "dev": "NODE_ENVIRONMENT=dev webpack serve --mode development",
+    "lint": "eslint --ext .ts,.tsx ./"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "dependencies": {
+    "@types/node": "^12.20.36",
+    "@types/react": "^17.0.33",
+    "@types/react-dom": "^17.0.10",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-config-airbnb-typescript": "^14.0.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-scripts": "^5.0.0",
+    "tsconfig-paths-webpack-plugin": "^3.5.1",
+    "typescript": "^4.4.4",
+    "web-vitals": "^1.1.2"
+  },
+  "devDependencies": {
+    "@types/copy-webpack-plugin": "^8.0.1",
+    "@types/html-webpack-plugin": "^3.2.6",
+    "clean-webpack-plugin": "^4.0.0",
+    "copy-webpack-plugin": "^9.0.1",
+    "css-loader": "^4.2.2",
+    "dotenv-webpack": "^7.0.3",
+    "html-webpack-plugin": "^5.5.0",
+    "style-loader": "^3.3.1",
+    "ts-loader": "^8.3.0",
+    "ts-node": "^10.4.0",
+    "url-loader": "^4.1.1",
+    "webpack": "^5.61.0",
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^4.4.0"
+  }
+}
