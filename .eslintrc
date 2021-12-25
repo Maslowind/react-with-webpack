@@ -2,7 +2,8 @@
   "extends": [
     "airbnb-base",
     "airbnb-typescript",
-    "plugin:@typescript-eslint/recommended"
+    "plugin:@typescript-eslint/recommended",
+    "prettier"
   ],
   "env": {
     "browser": true,
@@ -11,7 +12,8 @@
   "parser": "@typescript-eslint/parser",
   "plugins": [
     "@typescript-eslint",
-    "react"
+    "react",
+    "prettier"
   ],
   "parserOptions": {
     "ecmaVersion": 12,
@@ -19,6 +21,7 @@
     "sourceType": "module"
   },
   "rules": {
+    "prettier/prettier": "error",
     "no-underscore-dangle": [
       "error",
       {
@@ -41,15 +44,11 @@
     "import/no-cycle": "off",
     "import/no-named-as-default": "off",
     "import/no-named-as-default-member": "off",
-    "@typescript-eslint/indent": [
-      "error",
-      2
-    ],
     "max-len": [
       "error",
       {
         "code": 150,
-        "tabWidth": 2,
+        "tabWidth": 4,
         "ignoreRegExpLiterals": true
       }
     ],

@@ -6,7 +6,8 @@
     "build": "webpack --mode production",
     "build:dev": "NODE_ENVIRONMENT=dev webpack --mode production",
     "dev": "NODE_ENVIRONMENT=dev webpack serve --mode development",
-    "lint": "eslint --ext .ts,.tsx ./"
+    "lint": "eslint --ext .ts,.tsx ./",
+    "lint:fix": "eslint --ext .ts,.tsx ./ --fix"
   },
   "eslintConfig": {
     "extends": [
@@ -47,7 +48,10 @@
     "copy-webpack-plugin": "^9.0.1",
     "css-loader": "^4.2.2",
     "dotenv-webpack": "^7.0.3",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
     "html-webpack-plugin": "^5.5.0",
+    "prettier": "^2.5.1",
     "style-loader": "^3.3.1",
     "ts-loader": "^8.3.0",
     "ts-node": "^10.4.0",
